@@ -1,0 +1,33 @@
+
+
+Main Thread:
+
+  prompt user to login with oauth
+  save acess token
+
+  present game options to user (how many rounds, random from global top songs or taste based from user(s))
+
+  fetch list of songs based on game options
+
+  play song clip and wait for user prompt to next round (use yt-dlp)
+
+additional:
+  async task to fetch songs while playing game with a buffer
+
+  pin the game window on top to ensure that user does not see the song playing
+
+Problems:
+  music control through api only works with spotify premium , maybe fetch recomended songs from spotify and play on youtube? AdBlock?
+
+  If the user doesnt have a big enough library the songs will eventually start to repeat.
+
+  Get song titles and artist names from Spotify and play that into YouTube
+
+(Need Spotify API and YouTube)
+
+
+
+  
+
+  
+  

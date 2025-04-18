@@ -1,0 +1,11 @@
+C:\Users\boyak\Downloads\GuessTheSong\GuessTheSong\target\debug\deps\liboauth2-164cb46dbd13fdbd.rmeta: C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\lib.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\basic.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\devicecode.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\revocation.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\helpers.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\reqwest.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\types.rs
+
+C:\Users\boyak\Downloads\GuessTheSong\GuessTheSong\target\debug\deps\oauth2-164cb46dbd13fdbd.d: C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\lib.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\basic.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\devicecode.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\revocation.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\helpers.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\reqwest.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\types.rs
+
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\lib.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\basic.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\devicecode.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\revocation.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\helpers.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\reqwest.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\oauth2-4.4.2\src\types.rs:

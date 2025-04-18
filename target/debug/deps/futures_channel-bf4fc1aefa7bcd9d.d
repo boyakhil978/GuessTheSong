@@ -1,0 +1,10 @@
+C:\Users\boyak\Downloads\GuessTheSong\GuessTheSong\target\debug\deps\libfutures_channel-bf4fc1aefa7bcd9d.rmeta: C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\lib.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\lock.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\mod.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\queue.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\sink_impl.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\oneshot.rs
+
+C:\Users\boyak\Downloads\GuessTheSong\GuessTheSong\target\debug\deps\futures_channel-bf4fc1aefa7bcd9d.d: C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\lib.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\lock.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\mod.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\queue.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\sink_impl.rs C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\oneshot.rs
+
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\lib.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\lock.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\mod.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\queue.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\mpsc\sink_impl.rs:
+C:\Users\boyak\.cargo\registry\src\index.crates.io-6f17d22bba15001f\futures-channel-0.3.31\src\oneshot.rs:
