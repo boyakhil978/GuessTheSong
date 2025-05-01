@@ -1,7 +1,9 @@
 mod api ;
 use std::io;
-
 use api::SpotifyApi;
+use rand;
+
+
 
 #[tokio::main]
 async fn main() {
@@ -18,6 +20,16 @@ async fn main() {
         .expect("Failed to read line");
     spotify_api.login("primary").await;
 
+    let tracks = spotify_api.get_all_liked_songs("primary").await.unwrap();
+
+    println!("{}",tracks[0].name);
+    print!("{}", tracks.len());
+
+    let seed_ids: Vec<String> = tracks.shuffle
+    
+
+    //let recomendations = spotify_api.get_recommendations("primary", seed_ids&)
+    
     
 }
 
