@@ -3,7 +3,6 @@ use oauth2::{
     TokenResponse, TokenUrl,
 };
 use oauth2::basic::BasicClient;
-use std::clone;
 use std::collections::HashMap;
 use std::sync::{Arc, Mutex};
 use warp::Filter;
@@ -13,7 +12,7 @@ pub struct SpotifyApi {
     client_id: String,
     client_secret: String,
     redirect_uri: String,
-    users: Vec<String>,
+    users: Vec<(String, String)>,
 }
 
 impl SpotifyApi {
@@ -60,7 +59,7 @@ pub async fn login(&mut self, user: &str) {
             if let Some(state) = params.get("state") {
                 *state_clone.lock().unwrap() = Some(state.to_string());
             }
-            "You can close this tab and return to the app.".to_string()
+            "You have succesfully logged in to GuessTheSong, you can close this tab and return to the app.".to_string()
         });
     
     let code_holder_clone = code_holder.clone();
@@ -85,9 +84,11 @@ pub async fn login(&mut self, user: &str) {
         .await
         .expect("Failed to get token");
 
-    println!("\nAccess token for {}: {}", user, token_result.access_token().secret());
+    //println!("\nAccess token for {}: {}", user, token_result.access_token().secret());
+    println!("Logged in!");
+    
 
-    self.users.push(user.to_string());
+    self.users.push((user.to_string(), token_result.access_token().secret().to_string()));
     }
 }
     
