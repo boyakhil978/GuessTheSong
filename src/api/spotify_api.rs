@@ -7,7 +7,7 @@ use std::collections::HashMap;
 use std::sync::{Arc, Mutex};
 use warp::Filter;
 use open;
-use reqwest::header::{AUTHORIZATION};
+use reqwest::header::AUTHORIZATION;
 use serde::Deserialize;
 
 #[derive(Debug, Deserialize)]
@@ -74,6 +74,7 @@ impl SpotifyApi {
             .add_scope(Scope::new("user-read-private".to_string()))
             .add_scope(Scope::new("user-read-email".to_string()))
             .add_scope(Scope::new("user-library-read".to_string()))
+            .add_scope(Scope::new("user-modify-playback-state".to_string()))
             .url();
 
         println!("Opening browser for login...");
@@ -173,26 +174,60 @@ impl SpotifyApi {
             .ok_or("User not logged in")?;
     
         let seed_param = seed_tracks.join(",");
+
     
         let client = reqwest::Client::new();
         let resp = client
             .get("https://api.spotify.com/v1/recommendations")
             .query(&[
-                ("limit", "10"),
+                ("limit", "1"),
                 ("seed_tracks", &seed_param),
             ])
             .header(AUTHORIZATION, format!("Bearer {}", token))
             .send()
-            .await?
-            .error_for_status()?
-            .json::<RecommendationsResponse>()// reusing same stuct as, it is similar
             .await?;
+
+        if !resp.status().is_success() {
+            let status = resp.status();
+            let text = resp.text().await?;
+            eprintln!("Spotify API error ({}): {}", status, text);
+            return Err("Spotify returned an error".into());
+        }
+        let parsed: RecommendationsResponse = resp.json().await?;
+        Ok(parsed.tracks)
     
-        Ok(resp.tracks)
+    }
+
+    pub async fn play_song_with_id(&self, id: &str, user: &str) -> Result<(), Box<dyn std::error::Error>>{
+        let token = self.users.iter()
+            .find(|(username, _)| username == user)
+            .map(|(_, token)| token)
+            .ok_or("User not logged in")?;
+
+        let uri = format!("spotify:track:{}", id);
+        let client = reqwest::Client::new();
+
+        let response = client
+            .put("https://api.spotify.com/v1/me/player/play")
+            .header(AUTHORIZATION, format!("Bearer {}", token))
+            .json(&serde_json::json!({
+                "uris": [uri]
+            }))
+            .send()
+            .await?;
+
+        if !response.status().is_success() {
+            let status = response.status();
+            let text = response.text().await?;
+            eprintln!("Failed to play song ({}): {}", status, text);
+            return Err("Spotify play API failed".into());
+        }
+
+        Ok(())
     }
     
 }
-    
+
 
 
 
