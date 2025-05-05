@@ -1,4 +1,9 @@
 # GuessTheSong
-A game using the spotify API and the taste history of a group of people to generate short clips of music, in which the players attempt to guess the song.
+This Repo is the Final Project for CS128 Honors, the code for this app is written in Rust
+
+This project is a game using the spotify API and the saved songs of the user, randomly playing a song out of their library while the user(s) attempt to gues 
+
+
+
 
 
